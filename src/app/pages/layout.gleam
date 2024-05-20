@@ -10,6 +10,10 @@ pub fn layout(elements: List(Element(t))) -> Element(t) {
         attribute.name("viewport"),
         attribute.attribute("content", "width=device-width, initial-scale=1"),
       ]),
+      html.meta([
+        attribute.attribute("http-equiv", "Content-Type"),
+        attribute.attribute("content", "text/html; charset=utf-8")
+      ]),
       html.link([attribute.rel("stylesheet"), attribute.href("/static/app.css")]),
     ]),
     html.body([], elements),

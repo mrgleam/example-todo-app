@@ -31,7 +31,7 @@ fn todos_input() -> Element(t) {
     [
       class("add-todo-input"),
       attribute.method("POST"),
-      attribute.action("/tiems/create"),
+      attribute.action("/items/create"),
     ],
     [
       input([
